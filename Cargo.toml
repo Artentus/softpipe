@@ -1,0 +1,23 @@
+[package]
+name = "softpipe"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+debug = true
+
+[dependencies]
+bytemuck = { version = "1.13", features = ["derive", "min_const_generics"] }
+slender-math = "0.1"
+winit = "0.28"
+spin_sleep = "1.1"
+wgpu = "0.15"
+pollster = "0.3"
+num_cpus = "1.15"
+rayon = "1.6"
+image = "0.24"
+smallvec = "1.10"
+tobj = "3.2"
+itertools = "0.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
